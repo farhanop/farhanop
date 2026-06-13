@@ -35,6 +35,8 @@ I am a backend-focused full stack engineer specializing in building scalable sys
 
 ## 💻 Tech Stack
 
+## 💻 Tech Stack
+
 ### Backend
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
@@ -75,6 +77,8 @@ I am a backend-focused full stack engineer specializing in building scalable sys
 
 ## 📌 Featured Projects
 
+<!-- featured-projects:start -->
+
 ### 📚 Library Management System (Current)
 Fullstack library OPAC system replacing SLiMS for university library.
 - **Stack:** FastAPI · React · TypeScript · PostgreSQL · Docker
@@ -98,9 +102,13 @@ Centralized meeting request and approval system.
 - **Stack:** Node.js · MySQL
 - **Features:** Meeting request workflow, admin controls, audit logging
 
+<!-- featured-projects:end -->
+
 ---
 
 ## 📊 GitHub Stats
+
+<!-- stats:start -->
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=farhanop&theme=dark&hide_border=true&show_icons=true" width="48%" />
@@ -118,6 +126,15 @@ Centralized meeting request and approval system.
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=farhanop&theme=darkhub&no-frame=true&no-bg=true&row=2&column=4" />
 </p>
+<!-- stats:end -->
+
+---
+
+## 🔄 Recent Activity
+
+<!-- recent-activity:start -->
+_No recent public activity yet. Push to any repo to trigger auto-update!_
+<!-- recent-activity:end -->
 
 ---
 
