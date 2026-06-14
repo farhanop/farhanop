@@ -78,29 +78,39 @@ I am a backend-focused full stack engineer specializing in building scalable sys
 ## 📌 Featured Projects
 
 <!-- featured-projects:start -->
+## 📌 Featured Projects
 
-### 📚 Library Management System (Current)
-Fullstack library OPAC system replacing SLiMS for university library.
-- **Stack:** FastAPI · React · TypeScript · PostgreSQL · Docker
-- **Features:** OPAC search, circulation, membership, CMS, booking, reports, notifications
-- **Architecture:** Vertical Slice, REST API, SQLAlchemy ORM, JWT auth, Argon2
+### Library Management System 🔥 **CURRENT**
 
-### 🎥 CCTV Monitoring System
-Multi-NVR & multi-channel architecture with real-time streaming.
-- **Stack:** FastAPI · Redis · MySQL · WebRTC
-- **Features:** Multi-NVR aggregation, real-time WebRTC streaming
-- **Deployment:** Docker · Nginx reverse proxy
+_Fullstack library OPAC system replacing SLiMS for university library_
 
-### 📚 LMS Integration System
-Integration between Moodle and Academic System (SIAK).
-- **Stack:** Laravel · MySQL · REST API
-- **Features:** Student/course/grade synchronization, role-based access control
-- **Integration:** API-based with scheduled sync
+**Tech:** `FastAPI` · `React` · `TypeScript` · `PostgreSQL` · `Docker`
 
-### 📊 Zoom Management System
-Centralized meeting request and approval system.
-- **Stack:** Node.js · MySQL
-- **Features:** Meeting request workflow, admin controls, audit logging
+[View Repository](https://github.com/farhanop/library)
+
+### CCTV Monitoring System
+
+_Multi-NVR & multi-channel architecture with real-time WebRTC streaming_
+
+**Tech:** `FastAPI` · `WebRTC` · `Redis` · `MySQL` · `Docker`
+
+[View Repository](https://github.com/farhanop/cctv-monitoring)
+
+### LMS Integration System
+
+_Moodle-SIAK integration with API-based student/course/grade sync_
+
+**Tech:** `Laravel` · `MySQL` · `REST API`
+
+[View Repository](https://github.com/farhanop/lms-integration)
+
+### Zoom Management System
+
+_Centralized meeting request and approval system with audit logging_
+
+**Tech:** `Node.js` · `MySQL`
+
+[View Repository](https://github.com/farhanop/zoom-management)
 
 <!-- featured-projects:end -->
 
@@ -109,6 +119,7 @@ Centralized meeting request and approval system.
 ## 📊 GitHub Stats
 
 <!-- stats:start -->
+## 📊 GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=farhanop&theme=dark&hide_border=true&show_icons=true" width="48%" />
@@ -119,13 +130,11 @@ Centralized meeting request and approval system.
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=farhanop&theme=dark&hide_border=true&layout=compact" width="48%" />
 </p>
 
----
-
-## 🏆 Achievements
-
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=farhanop&theme=darkhub&no-frame=true&no-bg=true&row=2&column=4" />
 </p>
+
+<sub>Last updated: 2026-06-14 03:28 UTC</sub>
 <!-- stats:end -->
 
 ---
@@ -133,7 +142,13 @@ Centralized meeting request and approval system.
 ## 🔄 Recent Activity
 
 <!-- recent-activity:start -->
-_No recent public activity yet. Push to any repo to trigger auto-update!_
+## 🔄 Recent Activity
+
+- 🚀 Pushed **0 commit(s)** to [`farhanop/farhanop`](https://github.com/farhanop/farhanop) — __ _2026-06-13 18:45 UTC_
+- 🚀 Pushed **0 commit(s)** to [`farhanop/farhanop`](https://github.com/farhanop/farhanop) — __ _2026-06-13 18:35 UTC_
+
+<sub>Last updated: 2026-06-14 03:28 UTC</sub>
+
 <!-- recent-activity:end -->
 
 ---
