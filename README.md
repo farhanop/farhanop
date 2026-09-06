@@ -266,9 +266,19 @@
 </table>
 
 <p align="center">
-  <sub>⚡ Automated metrics synced at 2026-09-06 07:03 UTC</sub>
+  <sub>⚡ Automated metrics synced at 2026-09-06 07:09 UTC</sub>
 </p>
 <!-- stats:end -->
+
+---
+
+## 📅 Contributions in the last year
+
+<div align="center">
+  <a href="https://github.com/farhanop">
+    <img src="assets/contributions.svg" alt="Farhan's Contributions in the last year" width="100%" />
+  </a>
+</div>
 
 ---
 
@@ -286,16 +296,6 @@
 
 ---
 
-## 🔄 Recent Activity & Commit Feed
-
-<!-- recent-activity:start -->
-- 🚀 Pushed **1 commit(s)** to [`farhanop/farhanop`](https://github.com/farhanop/farhanop) — _Update code_ <sub>(2026-09-06 06:57 UTC)</sub>
-- ⭐ Starred [`fastapi/full-stack-fastapi-template`](https://github.com/fastapi/full-stack-fastapi-template) <sub>(2026-08-09 04:30 UTC)</sub>
-
-<sub>⚡ Last activity sync: 2026-09-06 07:03 UTC</sub>
-<!-- recent-activity:end -->
-
----
 
 ## 💡 Engineering Philosophy
 

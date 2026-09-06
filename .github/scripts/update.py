@@ -277,6 +277,111 @@ def replace_section(content: str, marker: str, new_content: str) -> str:
     return content[:start_idx] + replacement + content[end_idx + len(end_tag):]
 
 
+def generate_contributions_svg() -> None:
+    svg_path = os.path.join(os.path.dirname(__file__), "..", "..", "assets", "contributions.svg")
+    os.makedirs(os.path.dirname(svg_path), exist_ok=True)
+
+    url = f"https://github-contributions-api.jogruber.de/v4/{GITHUB_USERNAME}?y=last"
+    try:
+        resp = requests.get(url, headers={"User-Agent": "readme-updater/2.0"}, timeout=10)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f"Warning: Failed to fetch contributions API: {e}", file=sys.stderr)
+        if os.path.exists(svg_path):
+            return
+        data = {"total": {"lastYear": 0}, "contributions": []}
+
+    total = data.get("total", {}).get("lastYear", 0)
+    contribs = data.get("contributions", [])
+
+    palette = {
+        0: "#161b22",
+        1: "#004d40",
+        2: "#00796b",
+        3: "#009688",
+        4: "#38bdf8",
+    }
+
+    weeks = []
+    current_week = []
+    for c in contribs:
+        try:
+            d = datetime.fromisoformat(c["date"])
+            wday = (d.weekday() + 1) % 7
+            if wday == 0 and current_week:
+                weeks.append(current_week)
+                current_week = []
+            current_week.append((wday, c))
+        except Exception:
+            continue
+    if current_week:
+        weeks.append(current_week)
+
+    months = []
+    last_month = None
+    for col, week in enumerate(weeks):
+        for wday, c in week:
+            try:
+                d = datetime.fromisoformat(c["date"])
+                if d.month != last_month and d.day <= 7:
+                    months.append((col, d.strftime("%b")))
+                    last_month = d.month
+                    break
+            except Exception:
+                pass
+
+    ox = 55
+    oy = 64
+    pitch = 14
+    box_sz = 10
+
+    svg_parts = [
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 185" width="100%" height="100%">',
+        '  <rect width="840" height="185" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1" />',
+        '  <text x="30" y="34" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Contributions in the last year</text>',
+        f'  <text x="240" y="34" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', sans-serif" font-size="13" font-weight="500" fill="#38bdf8">({total} contributions in the last year)</text>',
+        '  <g font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', sans-serif" font-size="10" fill="#7d8590">',
+    ]
+
+    for col, m in months:
+        mx = ox + col * pitch
+        svg_parts.append(f'    <text x="{mx}" y="52">{m}</text>')
+
+    svg_parts.append(f'    <text x="25" y="{oy + 1 * pitch + 9}">Mon</text>')
+    svg_parts.append(f'    <text x="25" y="{oy + 3 * pitch + 9}">Wed</text>')
+    svg_parts.append(f'    <text x="25" y="{oy + 5 * pitch + 9}">Fri</text>')
+    svg_parts.append("  </g>")
+
+    svg_parts.append("  <g>")
+    for col, week in enumerate(weeks):
+        for wday, c in week:
+            x = ox + col * pitch
+            y = oy + wday * pitch
+            lvl = c.get("level", 0)
+            color = palette.get(lvl, "#161b22")
+            count = c.get("count", 0)
+            date_str = c.get("date", "")
+            title = f"{count} contribution{'s' if count != 1 else ''} on {date_str}"
+            svg_parts.append(f'    <rect x="{x}" y="{y}" width="{box_sz}" height="{box_sz}" rx="2.5" fill="{color}"><title>{title}</title></rect>')
+    svg_parts.append("  </g>")
+
+    leg_x = ox + len(weeks) * pitch - 100
+    leg_y = oy + 7 * pitch + 16
+    svg_parts.append('  <g font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', sans-serif" font-size="10" fill="#7d8590">')
+    svg_parts.append(f'    <text x="{leg_x - 32}" y="{leg_y + 8}">Less</text>')
+    for i in range(5):
+        lx = leg_x + i * 13
+        svg_parts.append(f'    <rect x="{lx}" y="{leg_y}" width="10" height="10" rx="2" fill="{palette[i]}" />')
+    svg_parts.append(f'    <text x="{leg_x + 68}" y="{leg_y + 8}">More</text>')
+    svg_parts.append("  </g>")
+    svg_parts.append("</svg>")
+
+    with open(svg_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(svg_parts))
+    print(f"Generated {svg_path} successfully ({total} contributions).")
+
+
 def main():
     abs_readme = os.path.abspath(README_PATH)
     if not os.path.exists(abs_readme):
@@ -298,6 +403,9 @@ def main():
     print("Syncing stats section...")
     stats = build_stats_section()
     content = replace_section(content, "stats", stats)
+
+    print("Generating contributions calendar SVG...")
+    generate_contributions_svg()
 
     with open(abs_readme, "w", encoding="utf-8") as f:
         f.write(content)
