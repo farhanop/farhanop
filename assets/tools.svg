@@ -1,0 +1,398 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="gridBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a13" />
+      <stop offset="50%" stop-color="#0a0f1d" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Card Base Gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151d2f" />
+      <stop offset="100%" stop-color="#0c1220" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      /* Smooth Floating Wave Keyframes */
+      @keyframes floatWave {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+      }
+      @keyframes spinOrbit {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { stroke: #1e293b; stroke-width: 1.2; }
+        50% { stroke: #38bdf8; stroke-width: 1.6; filter: drop-shadow(0 0 4px rgba(56, 189, 248, 0.4)); }
+      }
+      @keyframes fishWave {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(4deg) translateY(-2px); }
+      }
+
+      /* Card Floating Animation Classes with Staggered Delays */
+      .card-c1 { animation: floatWave 3.2s ease-in-out infinite 0.0s; }
+      .card-c2 { animation: floatWave 3.2s ease-in-out infinite 0.3s; }
+      .card-c3 { animation: floatWave 3.2s ease-in-out infinite 0.6s; }
+      .card-c4 { animation: floatWave 3.2s ease-in-out infinite 0.9s; }
+      .card-c5 { animation: floatWave 3.2s ease-in-out infinite 1.2s; }
+      .card-c6 { animation: floatWave 3.2s ease-in-out infinite 1.5s; }
+      .card-c7 { animation: floatWave 3.2s ease-in-out infinite 1.8s; }
+      .card-c8 { animation: floatWave 3.2s ease-in-out infinite 2.1s; }
+      .card-c9 { animation: floatWave 3.2s ease-in-out infinite 2.4s; }
+
+      .react-spin {
+        transform-origin: 25px 25px;
+        animation: spinOrbit 9s linear infinite;
+      }
+      .fish-tail {
+        transform-origin: 25px 25px;
+        animation: fishWave 2s ease-in-out infinite;
+      }
+      .card-pulse {
+        animation: pulseGlow 4s ease-in-out infinite;
+      }
+      .tool-text {
+        font-family: system-ui, -apple-system, sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        fill: #94a3b8;
+        text-anchor: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="920" height="360" rx="14" fill="url(#gridBg)" stroke="#1e293b" stroke-width="1.2" />
+
+  <!-- ==================== ROW 1 (Y = 22) ==================== -->
+
+  <!-- 1. FastAPI -->
+  <g transform="translate(25, 22)" class="card-c1">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#009688" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <circle cx="25" cy="25" r="20" fill="#004d40" />
+      <path d="M 23 10 L 16 26 L 24 26 L 22 40 L 34 22 L 26 22 Z" fill="#009688" />
+    </g>
+    <text x="39" y="86" class="tool-text">FastAPI</text>
+  </g>
+
+  <!-- 2. Python -->
+  <g transform="translate(122, 22)" class="card-c2">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <circle cx="25" cy="25" r="20" fill="#172554" />
+      <path d="M 24 14 C 18 14 19 18 19 18 L 22 18 C 22 18 22 16 25 16 C 28 16 28 18 28 20 L 28 22 L 20 22 C 16 22 14 24 14 28 C 14 32 17 34 21 34 L 23 34 L 23 31 C 23 27 25 26 29 26 L 31 26 C 33 26 35 24 35 22 L 35 18 C 35 14 30 14 24 14 Z" fill="#38bdf8" />
+      <path d="M 26 36 C 32 36 31 32 31 32 L 28 32 C 28 32 28 34 25 34 C 22 34 22 32 22 30 L 22 28 L 30 28 C 34 28 36 26 36 22 C 36 18 33 16 29 16 L 27 16 L 27 19 C 27 23 25 24 21 24 L 19 24 C 17 24 15 26 15 28 L 15 32 C 15 36 20 36 26 36 Z" fill="#facc15" />
+    </g>
+    <text x="39" y="86" class="tool-text">Python</text>
+  </g>
+
+  <!-- 3. React -->
+  <g transform="translate(219, 22)" class="card-c3">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#0284c7" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <circle cx="25" cy="25" r="20" fill="#0c4a6e" />
+      <g class="react-spin">
+        <ellipse cx="25" cy="25" rx="15" ry="5.5" fill="none" stroke="#61dafb" stroke-width="1.6" />
+        <ellipse cx="25" cy="25" rx="15" ry="5.5" fill="none" stroke="#61dafb" stroke-width="1.6" transform="rotate(60 25 25)" />
+        <ellipse cx="25" cy="25" rx="15" ry="5.5" fill="none" stroke="#61dafb" stroke-width="1.6" transform="rotate(120 25 25)" />
+      </g>
+      <circle cx="25" cy="25" r="3" fill="#61dafb" />
+    </g>
+    <text x="39" y="86" class="tool-text">React</text>
+  </g>
+
+  <!-- 4. TypeScript -->
+  <g transform="translate(316, 22)" class="card-c4">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <rect x="5" y="5" width="40" height="40" rx="8" fill="#1e3a8a" />
+      <text x="25" y="32" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="bold" fill="#60a5fa" text-anchor="middle">TS</text>
+    </g>
+    <text x="39" y="86" class="tool-text">TypeScript</text>
+  </g>
+
+  <!-- 5. JavaScript -->
+  <g transform="translate(413, 22)" class="card-c5">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <rect x="5" y="5" width="40" height="40" rx="8" fill="#713f12" />
+      <text x="25" y="32" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="bold" fill="#facc15" text-anchor="middle">JS</text>
+    </g>
+    <text x="39" y="86" class="tool-text">Javascript</text>
+  </g>
+
+  <!-- 6. REST API -->
+  <g transform="translate(510, 22)" class="card-c6">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <rect x="5" y="5" width="40" height="40" rx="8" fill="#064e3b" />
+      <text x="25" y="30" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" fill="#34d399" text-anchor="middle">{REST}</text>
+    </g>
+    <text x="39" y="86" class="tool-text">Rest API</text>
+  </g>
+
+  <!-- 7. Docker -->
+  <g transform="translate(607, 22)" class="card-c7">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <circle cx="25" cy="25" r="20" fill="#082f49" />
+      <!-- Whale Body & Containers -->
+      <path d="M 12 25 C 13 18 20 18 24 22 C 26 19 32 19 35 23 C 37 25 38 29 36 32 C 32 35 20 35 14 31 Z" fill="#38bdf8" />
+      <rect x="18" y="16" width="3" height="3" fill="#38bdf8" />
+      <rect x="22" y="16" width="3" height="3" fill="#38bdf8" />
+      <rect x="26" y="16" width="3" height="3" fill="#38bdf8" />
+      <rect x="22" y="12" width="3" height="3" fill="#38bdf8" />
+    </g>
+    <text x="39" y="86" class="tool-text">Docker</text>
+  </g>
+
+  <!-- 8. Nginx -->
+  <g transform="translate(704, 22)" class="card-c8">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <polygon points="25,7 41,16 41,34 25,43 9,34 9,16" fill="#064e3b" stroke="#10b981" stroke-width="1" />
+      <text x="25" y="31" font-family="system-ui, sans-serif" font-size="18" font-weight="900" fill="#ffffff" text-anchor="middle">N</text>
+    </g>
+    <text x="39" y="86" class="tool-text">Nginx</text>
+  </g>
+
+  <!-- 9. GitHub -->
+  <g transform="translate(801, 22)" class="card-c9">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <circle cx="25" cy="25" r="20" fill="#1e293b" />
+      <path d="M 25 12 C 18 12 12 18 12 25 C 12 30 16 35 21 37 C 22 37 22 36 22 36 L 22 33 C 18 34 17 31 17 31 C 16 30 15 29 15 29 C 14 28 15 28 15 28 C 17 28 18 30 18 30 C 19 32 22 31 23 30 C 23 29 24 28 24 27 C 21 27 18 26 18 21 C 18 20 18 19 19 18 C 19 18 19 17 19 15 C 20 15 22 17 22 17 C 24 16 26 16 28 17 C 28 17 30 15 31 15 C 31 17 31 18 31 18 C 32 19 32 20 32 21 C 32 26 29 27 26 27 C 26 28 27 29 27 31 L 27 36 C 27 36 27 37 28 37 C 34 35 38 30 38 25 C 38 18 32 12 25 12 Z" fill="#f8fafc" />
+    </g>
+    <text x="39" y="86" class="tool-text">Github</text>
+  </g>
+
+  <!-- ==================== ROW 2 (Y = 135) ==================== -->
+
+  <!-- 10. Git -->
+  <g transform="translate(25, 135)" class="card-c1">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <rect x="8" y="8" width="34" height="34" rx="7" transform="rotate(45 25 25)" fill="#dc2626" />
+      <circle cx="21" cy="25" r="3" fill="#ffffff" />
+      <circle cx="29" cy="18" r="3" fill="#ffffff" />
+      <circle cx="29" cy="32" r="3" fill="#ffffff" />
+      <line x1="21" y1="25" x2="29" y2="18" stroke="#ffffff" stroke-width="2" />
+      <line x1="21" y1="25" x2="29" y2="32" stroke="#ffffff" stroke-width="2" />
+    </g>
+    <text x="39" y="86" class="tool-text">Git</text>
+  </g>
+
+  <!-- 11. GitHub Actions -->
+  <g transform="translate(122, 135)" class="card-c2">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <circle cx="25" cy="25" r="20" fill="#1e3a8a" />
+      <polygon points="19,16 35,25 19,34" fill="#60a5fa" />
+    </g>
+    <text x="39" y="86" class="tool-text">Actions</text>
+  </g>
+
+  <!-- 12. HTML5 -->
+  <g transform="translate(219, 135)" class="card-c3">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <polygon points="12,8 38,8 35,38 25,41 15,38" fill="#ea580c" />
+      <text x="25" y="30" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+    </g>
+    <text x="39" y="86" class="tool-text">HTML</text>
+  </g>
+
+  <!-- 13. CSS3 -->
+  <g transform="translate(316, 135)" class="card-c4">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <polygon points="12,8 38,8 35,38 25,41 15,38" fill="#0284c7" />
+      <text x="25" y="30" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+    </g>
+    <text x="39" y="86" class="tool-text">CSS</text>
+  </g>
+
+  <!-- 14. Tailwind CSS -->
+  <g transform="translate(413, 135)" class="card-c5">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <circle cx="25" cy="25" r="20" fill="#0e7490" />
+      <path d="M 16 23 C 18 19 22 18 25 21 C 27 23 29 24 32 23 C 34 22 35 20 35 20 C 33 24 29 25 26 22 C 24 20 22 19 19 20 C 17 21 16 23 16 23 Z" fill="#67e8f9" />
+      <path d="M 13 29 C 15 25 19 24 22 27 C 24 29 26 30 29 29 C 31 28 32 26 32 26 C 30 30 26 31 23 28 C 21 26 19 25 16 26 C 14 27 13 29 13 29 Z" fill="#67e8f9" />
+    </g>
+    <text x="39" y="86" class="tool-text">Tailwind</text>
+  </g>
+
+  <!-- 15. Vite -->
+  <g transform="translate(510, 135)" class="card-c6">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <circle cx="25" cy="25" r="20" fill="#4c1d95" />
+      <polygon points="28,10 16,26 24,26 20,40 34,22 26,22" fill="#fbbf24" stroke="#a855f7" stroke-width="1.5" />
+    </g>
+    <text x="39" y="86" class="tool-text">Vite</text>
+  </g>
+
+  <!-- 16. React Query (TanStack) -->
+  <g transform="translate(607, 135)" class="card-c7">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <circle cx="25" cy="25" r="20" fill="#881337" />
+      <circle cx="25" cy="25" r="12" fill="#f43f5e" />
+      <circle cx="25" cy="25" r="6" fill="#ffe4e6" />
+    </g>
+    <text x="39" y="86" class="tool-text">React Query</text>
+  </g>
+
+  <!-- 17. PostgreSQL -->
+  <g transform="translate(704, 135)" class="card-c8">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#316192" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <circle cx="25" cy="25" r="20" fill="#1e3a8a" />
+      <!-- Elephant Silhouette / Outline -->
+      <path d="M 18 19 C 18 15 25 15 28 17 C 32 15 36 17 36 23 C 36 27 34 32 30 33 L 30 36 L 26 36 L 26 32 C 23 32 21 30 20 28 C 19 28 17 32 15 32 C 14 32 14 27 15 24 C 15 22 18 22 18 19 Z" fill="#93c5fd" />
+    </g>
+    <text x="39" y="86" class="tool-text">PostgreSQL</text>
+  </g>
+
+  <!-- 18. MySQL -->
+  <g transform="translate(801, 135)" class="card-c9">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <circle cx="25" cy="25" r="20" fill="#0369a1" />
+      <!-- Dolphin -->
+      <path d="M 33 16 C 26 15 21 21 16 24 C 14 25 12 28 14 29 C 16 30 20 28 22 26 C 25 24 29 23 33 27 C 34 25 35 20 33 16 Z" fill="#f59e0b" />
+    </g>
+    <text x="39" y="86" class="tool-text">MySQL</text>
+  </g>
+
+  <!-- ==================== ROW 3 (Y = 248) ==================== -->
+
+  <!-- 19. Redis -->
+  <g transform="translate(25, 248)" class="card-c1">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#dc2626" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <ellipse cx="25" cy="18" rx="14" ry="5" fill="#ef4444" />
+      <path d="M 11 18 L 11 25 C 11 28 17 30 25 30 C 33 30 39 28 39 25 L 39 18" fill="none" stroke="#b91c1c" stroke-width="2" />
+      <path d="M 11 25 L 11 32 C 11 35 17 37 25 37 C 33 37 39 35 39 32 L 39 25" fill="none" stroke="#ef4444" stroke-width="2" />
+    </g>
+    <text x="39" y="86" class="tool-text">Redis</text>
+  </g>
+
+  <!-- 20. Postman -->
+  <g transform="translate(122, 248)" class="card-c2">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <circle cx="25" cy="25" r="20" fill="#c2410c" />
+      <!-- Spaceman Jetpack -->
+      <polygon points="25,12 33,26 27,24 25,36 23,24 17,26" fill="#fed7aa" />
+    </g>
+    <text x="39" y="86" class="tool-text">Postman</text>
+  </g>
+
+  <!-- 21. Linux -->
+  <g transform="translate(219, 248)" class="card-c3">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <!-- Tux Penguin Body -->
+      <ellipse cx="25" cy="26" rx="12" ry="14" fill="#0f172a" stroke="#f8fafc" stroke-width="1.2" />
+      <ellipse cx="25" cy="28" rx="7" ry="9" fill="#f8fafc" />
+      <circle cx="22" cy="18" r="1.5" fill="#0f172a" />
+      <circle cx="28" cy="18" r="1.5" fill="#0f172a" />
+      <polygon points="23,20 27,20 25,23" fill="#f59e0b" />
+    </g>
+    <text x="39" y="86" class="tool-text">Linux</text>
+  </g>
+
+  <!-- 22. WSL (Windows Subsystem for Linux) ⭐ NEW -->
+  <g transform="translate(316, 248)" class="card-c4">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#0284c7" stroke-width="1.4" class="card-pulse" />
+    <g transform="translate(14, 8)">
+      <!-- Windows Logo + Penguin Combo -->
+      <rect x="10" y="11" width="13" height="12" rx="2" fill="#00adef" />
+      <rect x="26" y="11" width="13" height="12" rx="2" fill="#00adef" />
+      <rect x="10" y="26" width="13" height="12" rx="2" fill="#00adef" />
+      <rect x="26" y="26" width="13" height="12" rx="2" fill="#00adef" />
+      <!-- Tux Overlay Mini -->
+      <circle cx="37" cy="37" r="5" fill="#f59e0b" />
+    </g>
+    <text x="39" y="86" class="tool-text" font-weight="700" fill="#38bdf8">WSL</text>
+  </g>
+
+  <!-- 23. Fish Shell (Fish Terminal) ⭐ NEW -->
+  <g transform="translate(413, 248)" class="card-c5">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#06b6d4" stroke-width="1.4" class="card-pulse" />
+    <g transform="translate(14, 8)" class="fish-tail">
+      <circle cx="25" cy="25" r="20" fill="#164e63" />
+      <!-- Stylized Neon Fish Shell Logo -->
+      <path d="M 15 25 C 19 17 28 17 33 21 C 36 23 37 25 37 25 C 37 25 36 27 33 29 C 28 33 19 33 15 25 Z" fill="#22d3ee" />
+      <!-- Fish Eye & Fin -->
+      <circle cx="31" cy="23" r="1.5" fill="#083344" />
+      <polygon points="17,25 12,19 14,25 12,31" fill="#06b6d4" />
+      <path d="M 23 21 C 24 23 25 24 27 24" fill="none" stroke="#083344" stroke-width="1.2" />
+    </g>
+    <text x="39" y="86" class="tool-text" font-weight="700" fill="#22d3ee">Fish Shell</text>
+  </g>
+
+  <!-- 24. Express.js -->
+  <g transform="translate(510, 248)" class="card-c6">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <circle cx="25" cy="25" r="20" fill="#1e293b" />
+      <text x="25" y="31" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#f8fafc" text-anchor="middle">ex</text>
+    </g>
+    <text x="39" y="86" class="tool-text">Express</text>
+  </g>
+
+  <!-- 25. Laravel -->
+  <g transform="translate(607, 248)" class="card-c7">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <circle cx="25" cy="25" r="20" fill="#7f1d1d" />
+      <!-- Isometric Red Block -->
+      <polygon points="25,12 36,18 25,24 14,18" fill="#f87171" />
+      <polygon points="14,18 25,24 25,37 14,31" fill="#dc2626" />
+      <polygon points="36,18 25,24 25,37 36,31" fill="#b91c1c" />
+    </g>
+    <text x="39" y="86" class="tool-text">Laravel</text>
+  </g>
+
+  <!-- 26. RabbitMQ -->
+  <g transform="translate(704, 248)" class="card-c8">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <rect x="8" y="12" width="34" height="26" rx="6" fill="#c2410c" />
+      <!-- Rabbit Ears -->
+      <ellipse cx="21" cy="10" rx="3" ry="7" fill="#ea580c" />
+      <ellipse cx="29" cy="10" rx="3" ry="7" fill="#ea580c" />
+      <circle cx="20" cy="22" r="2" fill="#ffffff" />
+      <circle cx="30" cy="22" r="2" fill="#ffffff" />
+    </g>
+    <text x="39" y="86" class="tool-text">RabbitMQ</text>
+  </g>
+
+  <!-- 27. Pytest -->
+  <g transform="translate(801, 248)" class="card-c9">
+    <rect width="78" height="66" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.2" />
+    <g transform="translate(14, 8)">
+      <circle cx="25" cy="25" r="20" fill="#0f172a" />
+      <!-- Colored Pytest Bars -->
+      <rect x="14" y="14" width="4" height="22" rx="2" fill="#0284c7" />
+      <rect x="20" y="14" width="4" height="17" rx="2" fill="#facc15" />
+      <rect x="26" y="14" width="4" height="22" rx="2" fill="#ea580c" />
+      <rect x="32" y="14" width="4" height="13" rx="2" fill="#10b981" />
+    </g>
+    <text x="39" y="86" class="tool-text">Pytest</text>
+  </g>
+
+</svg>

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "library-opac",
+    "title": "Library Management System (OPAC)",
+    "badge": "🔥 ACTIVE PRODUCTION",
+    "scope": "UIGM-IT-Dev",
+    "repo": "UIGM-IT-Dev/library",
+    "public_repo": "farhanop/library",
+    "is_private": true,
+    "affiliation": "Universitas Indo Global Mandiri",
+    "description": "Fullstack library OPAC & repository platform replacing legacy SLiMS for university-wide academic library.",
+    "architecture_highlight": "Engineered with Vertical Slice Architecture, high-concurrency catalog queries, and automated circulation workflows.",
+    "tags": ["FastAPI", "React", "TypeScript", "PostgreSQL", "Docker", "SQLAlchemy", "Alembic"]
+  },
+  {
+    "id": "cctv-monitoring",
+    "title": "Campus CCTV Real-Time Monitoring",
+    "badge": "📹 PRODUCTION STREAMING",
+    "scope": "UIGM-IT-Dev",
+    "repo": "UIGM-IT-Dev/cctv-monitoring",
+    "public_repo": "farhanop/cctv-monitoring",
+    "is_private": true,
+    "affiliation": "Universitas Indo Global Mandiri",
+    "description": "Multi-NVR & multi-channel surveillance engine delivering ultra-low-latency real-time video feeds across campus network.",
+    "architecture_highlight": "Implemented WebRTC media streaming pipeline with Redis pub/sub state handling and multi-stream hardware acceleration.",
+    "tags": ["FastAPI", "WebRTC", "Redis", "MySQL", "Docker", "Nginx"]
+  },
+  {
+    "id": "lms-integration",
+    "title": "LMS Moodle - SIAK Integration Gateway",
+    "badge": "🔄 ENTERPRISE GATEWAY",
+    "scope": "UIGM-IT-Dev",
+    "repo": "UIGM-IT-Dev/lms-integration",
+    "public_repo": "farhanop/lms-integration",
+    "is_private": true,
+    "affiliation": "Universitas Indo Global Mandiri",
+    "description": "Enterprise middleware bridging Moodle LMS with university Academic Information System (SIAK) for seamless synchronization.",
+    "architecture_highlight": "Automated bi-directional sync for thousands of student enrollments, course schedules, and academic grade transcripts.",
+    "tags": ["Laravel", "REST API", "MySQL", "Redis", "Scheduled Jobs"]
+  },
+  {
+    "id": "zoom-management",
+    "title": "Enterprise Zoom Room & Meeting Manager",
+    "badge": "🔒 INTERNAL SYSTEM",
+    "scope": "UIGM-IT-Dev",
+    "repo": "UIGM-IT-Dev/zoom-management",
+    "public_repo": "farhanop/zoom-management",
+    "is_private": true,
+    "affiliation": "Universitas Indo Global Mandiri",
+    "description": "Centralized meeting booking, license scheduling, and audit trail system managing enterprise institutional Zoom accounts.",
+    "architecture_highlight": "Dynamic host license allocation, conflict detection algorithms, and automated audit logging.",
+    "tags": ["Node.js", "Express", "Zoom API", "MySQL", "RBAC"]
+  },
+  {
+    "id": "simess-api",
+    "title": "SIMess Backend API Platform",
+    "badge": "🌐 OPEN REPOSITORY",
+    "scope": "farhanop",
+    "repo": "farhanop/simess-api",
+    "public_repo": "farhanop/simess-api",
+    "is_private": false,
+    "affiliation": "Universitas Indo Global Mandiri",
+    "description": "Backend service API power-driving SIMess application with structured RESTful endpoints and authentication services.",
+    "architecture_highlight": "Clean API contract design with robust validation and modular route controllers.",
+    "tags": ["PHP", "REST API", "MySQL", "Authentication"]
+  }
+]
