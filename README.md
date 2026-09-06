@@ -66,9 +66,176 @@
 
 > Tools and technologies that I have worked with and am interested in
 
-<div align="center">
-  <img src="assets/tools.svg" alt="My Favorite Tools and Technologies" width="100%" />
-</div>
+<table align="center">
+  <tr>
+    <td align="center" width="96">
+      <a href="https://fastapi.tiangolo.com/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/fastapi.png" width="48" height="48" alt="FastAPI" />
+      </a>
+      <br />FastAPI
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.python.org/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/python.png" width="48" height="48" alt="Python" />
+      </a>
+      <br />Python
+    </td>
+    <td align="center" width="96">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/javascript.png" width="48" height="48" alt="JavaScript" />
+      </a>
+      <br />Javascript
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.typescriptlang.org/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/typescript.png" width="48" height="48" alt="TypeScript" />
+      </a>
+      <br />TypeScript
+    </td>
+    <td align="center" width="96">
+      <a href="https://react.dev/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/react.png" width="48" height="48" alt="React" />
+      </a>
+      <br />React
+    </td>
+    <td align="center" width="96">
+      <a href="https://github.com/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/github.png" width="48" height="48" alt="GitHub" />
+      </a>
+      <br />Github
+    </td>
+    <td align="center" width="96">
+      <a href="https://restfulapi.net/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/rest.png" width="48" height="48" alt="REST API" />
+      </a>
+      <br />Rest API
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.docker.com/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/docker.png" width="48" height="48" alt="Docker" />
+      </a>
+      <br />Docker
+    </td>
+    <td align="center" width="96">
+      <a href="https://nginx.org/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/nginx.png" width="48" height="48" alt="Nginx" />
+      </a>
+      <br />Nginx
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="96">
+      <a href="https://git-scm.com/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/git.png" width="48" height="48" alt="Git" />
+      </a>
+      <br />Git
+    </td>
+    <td align="center" width="96">
+      <a href="https://github.com/features/actions">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/githubactions.png" width="48" height="48" alt="GitHub Actions" />
+      </a>
+      <br />Actions
+    </td>
+    <td align="center" width="96">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/html.png" width="48" height="48" alt="HTML" />
+      </a>
+      <br />HTML
+    </td>
+    <td align="center" width="96">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/css.png" width="48" height="48" alt="CSS" />
+      </a>
+      <br />CSS
+    </td>
+    <td align="center" width="96">
+      <a href="https://tailwindcss.com/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/tailwind_css.png" width="48" height="48" alt="Tailwind" />
+      </a>
+      <br />Tailwind
+    </td>
+    <td align="center" width="96">
+      <a href="https://vitejs.dev/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/vite.png" width="48" height="48" alt="Vite" />
+      </a>
+      <br />Vite
+    </td>
+    <td align="center" width="96">
+      <a href="https://tanstack.com/query">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/react_query.png" width="48" height="48" alt="React Query" />
+      </a>
+      <br />React Query
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.postgresql.org/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/postgresql.png" width="48" height="48" alt="PostgreSQL" />
+      </a>
+      <br />PostgreSQL
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.mysql.com/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/mysql.png" width="48" height="48" alt="MySQL" />
+      </a>
+      <br />MySQL
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="96">
+      <a href="https://redis.io/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/redis.png" width="48" height="48" alt="Redis" />
+      </a>
+      <br />Redis
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.postman.com/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/postman.png" width="48" height="48" alt="Postman" />
+      </a>
+      <br />Postman
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.kernel.org/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/linux.png" width="48" height="48" alt="Linux" />
+      </a>
+      <br />Linux
+    </td>
+    <td align="center" width="96">
+      <a href="https://learn.microsoft.com/en-us/windows/wsl/">
+        <img src="assets/icons/wsl.svg" width="48" height="48" alt="WSL" />
+      </a>
+      <br />WSL
+    </td>
+    <td align="center" width="96">
+      <a href="https://fishshell.com/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/fish.png" width="48" height="48" alt="Fish Shell" />
+      </a>
+      <br />Fish Shell
+    </td>
+    <td align="center" width="96">
+      <a href="https://expressjs.com/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/express.png" width="48" height="48" alt="Express" />
+      </a>
+      <br />Express
+    </td>
+    <td align="center" width="96">
+      <a href="https://laravel.com/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/laravel.png" width="48" height="48" alt="Laravel" />
+      </a>
+      <br />Laravel
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.rabbitmq.com/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/rabbitmq.png" width="48" height="48" alt="RabbitMQ" />
+      </a>
+      <br />RabbitMQ
+    </td>
+    <td align="center" width="96">
+      <a href="https://docs.pytest.org/">
+        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/pytest.png" width="48" height="48" alt="Pytest" />
+      </a>
+      <br />Pytest
+    </td>
+  </tr>
+</table>
 
 
 ---
@@ -99,7 +266,7 @@
 </table>
 
 <p align="center">
-  <sub>⚡ Automated metrics synced at 2026-09-06 06:56 UTC</sub>
+  <sub>⚡ Automated metrics synced at 2026-09-06 07:03 UTC</sub>
 </p>
 <!-- stats:end -->
 
@@ -122,9 +289,10 @@
 ## 🔄 Recent Activity & Commit Feed
 
 <!-- recent-activity:start -->
+- 🚀 Pushed **1 commit(s)** to [`farhanop/farhanop`](https://github.com/farhanop/farhanop) — _Update code_ <sub>(2026-09-06 06:57 UTC)</sub>
 - ⭐ Starred [`fastapi/full-stack-fastapi-template`](https://github.com/fastapi/full-stack-fastapi-template) <sub>(2026-08-09 04:30 UTC)</sub>
 
-<sub>⚡ Last activity sync: 2026-09-06 06:56 UTC</sub>
+<sub>⚡ Last activity sync: 2026-09-06 07:03 UTC</sub>
 <!-- recent-activity:end -->
 
 ---
