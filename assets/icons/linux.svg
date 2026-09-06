@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48">
+  <defs>
+    <clipPath id="cardClip">
+      <rect width="64" height="64" rx="14" />
+    </clipPath>
+    <style>
+      @keyframes softWiggle {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(-4deg); }
+        75% { transform: rotate(4deg); }
+      }
+      .anim-wiggle { transform-origin: 32px 36px; animation: softWiggle 3s ease-in-out infinite; }
+    </style>
+  </defs>
+  <g clip-path="url(#cardClip)">
+    <rect width="64" height="64" rx="14" fill="#151d28" stroke="#334155" stroke-width="1.5" />
+    <g class="anim-wiggle">
+      <g transform="translate(13, 10)">
+        <ellipse cx="11" cy="38" rx="7" ry="3.5" fill="#f59e0b" />
+        <ellipse cx="27" cy="38" rx="7" ry="3.5" fill="#f59e0b" />
+        <path d="M19 4 C12 4, 7 13, 7 23 C7 27, 4 32, 3 35 C2 37, 4 39, 7 37 C9 35, 11 31, 12 29 C13 35, 15 39, 19 39 C23 39, 25 35, 26 29 C27 31, 29 35, 31 37 C34 39, 36 37, 35 35 C34 32, 31 27, 31 23 C31 13, 26 4, 19 4 Z" fill="#0f172a" />
+        <ellipse cx="19" cy="26" rx="8.5" ry="10.5" fill="#f8fafc" />
+        <ellipse cx="19" cy="13" rx="8" ry="8.5" fill="#0f172a" />
+        <ellipse cx="16" cy="11.5" rx="2.2" ry="3.2" fill="#f8fafc" />
+        <ellipse cx="22" cy="11.5" rx="2.2" ry="3.2" fill="#f8fafc" />
+        <circle cx="16.5" cy="11.5" r="1.1" fill="#0f172a" />
+        <circle cx="21.5" cy="11.5" r="1.1" fill="#0f172a" />
+        <path d="M15 14 Q19 13 23 14 Q21 18 19 19 Q17 18 15 14 Z" fill="#f59e0b" />
+      </g>
+    </g>
+  </g>
+</svg>

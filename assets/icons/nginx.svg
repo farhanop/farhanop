@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48">
+  <defs>
+    <clipPath id="cardClip">
+      <rect width="64" height="64" rx="14" />
+    </clipPath>
+    <style>
+      @keyframes softPulse {
+        0%, 100% { transform: scale(1); filter: drop-shadow(0 0 2px rgba(0,150,57,0.3)); }
+        50% { transform: scale(1.08); filter: drop-shadow(0 0 8px rgba(0,177,64,0.6)); }
+      }
+      .anim-pulse { transform-origin: 32px 32px; animation: softPulse 2.4s ease-in-out infinite; }
+    </style>
+  </defs>
+  <g clip-path="url(#cardClip)">
+    <rect width="64" height="64" rx="14" fill="#151d28" stroke="#334155" stroke-width="1.5" />
+    <g class="anim-pulse">
+      <g transform="translate(14, 14) scale(1.5)">
+        <path fill="#009639" d="M12 0L1.605 6v12L12 24l10.395-6V6L12 0z"/>
+        <path fill="#ffffff" d="M17.66 16.71l-1.39 1.14-5.32-6.57v5.43H9.14V7.29l1.39-1.14 5.32 6.57V7.29h1.81v9.42z"/>
+      </g>
+    </g>
+  </g>
+</svg>

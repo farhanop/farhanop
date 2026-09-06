@@ -16,19 +16,19 @@
 
   <!-- Status & Affiliation Badges -->
   <p align="center">
-    <a href="https://github.com/UIGM-IT-Dev"><img src="https://img.shields.io/badge/Organization-UIGM--IT--Dev-0284c7?style=flat-square&logo=github&logoColor=white" alt="UIGM IT Dev" /></a>
-    <img src="https://img.shields.io/badge/Focus-FastAPI%20%2B%20React-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI + React Focus" />
-    <img src="https://img.shields.io/badge/Location-Palembang%2C%20ID-1e293b?style=flat-square&logo=googlemaps&logoColor=white" alt="Location" />
+    <a href="https://github.com/UIGM-IT-Dev"><img src="assets/badges/badge-org.svg" alt="UIGM IT Dev" height="20" /></a>
+    <img src="assets/badges/badge-focus.svg" alt="FastAPI + React Focus" height="20" />
+    <img src="assets/badges/badge-location.svg" alt="Location" height="20" />
     <img src="https://komarev.com/ghpvc/?username=farhanop&style=flat-square&color=0284c7" alt="Profile Views" />
     <img src="https://img.shields.io/github/followers/farhanop?style=flat-square&color=0284c7" alt="GitHub Followers" />
   </p>
 
   <!-- Connect & Socials -->
   <p align="center">
-    <a href="https://linkedin.com/in/parhan-oktaria-putra-60b647247"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-    <a href="mailto:farhanop2@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-    <a href="https://instagram.com/parhanop07"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
-    <a href="https://facebook.com/farhanop"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" /></a>
+    <a href="https://linkedin.com/in/parhan-oktaria-putra-60b647247"><img src="assets/badges/linkedin.svg" alt="LinkedIn" height="28" /></a>
+    <a href="mailto:farhanop2@gmail.com"><img src="assets/badges/email.svg" alt="Email" height="28" /></a>
+    <a href="https://instagram.com/parhanop07"><img src="assets/badges/instagram.svg" alt="Instagram" height="28" /></a>
+    <a href="https://facebook.com/farhanop"><img src="assets/badges/facebook.svg" alt="Facebook" height="28" /></a>
   </p>
 
 </div>
@@ -66,171 +66,171 @@
 
 > Tools and technologies that I have worked with and am interested in
 
-<table align="center">
+<table align="center" width="100%">
   <tr>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://fastapi.tiangolo.com/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/fastapi.png" width="48" height="48" alt="FastAPI" />
+        <img src="assets/icons/fastapi.svg" width="48" height="48" alt="FastAPI" />
       </a>
       <br />FastAPI
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://www.python.org/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/python.png" width="48" height="48" alt="Python" />
+        <img src="assets/icons/python.svg" width="48" height="48" alt="Python" />
       </a>
       <br />Python
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/javascript.png" width="48" height="48" alt="JavaScript" />
+        <img src="assets/icons/javascript.svg" width="48" height="48" alt="JavaScript" />
       </a>
       <br />Javascript
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://www.typescriptlang.org/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/typescript.png" width="48" height="48" alt="TypeScript" />
+        <img src="assets/icons/typescript.svg" width="48" height="48" alt="TypeScript" />
       </a>
       <br />TypeScript
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://react.dev/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/react.png" width="48" height="48" alt="React" />
+        <img src="assets/icons/react.svg" width="48" height="48" alt="React" />
       </a>
       <br />React
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://github.com/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/github.png" width="48" height="48" alt="GitHub" />
+        <img src="assets/icons/github.svg" width="48" height="48" alt="GitHub" />
       </a>
       <br />Github
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://restfulapi.net/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/rest.png" width="48" height="48" alt="REST API" />
+        <img src="assets/icons/rest.svg" width="48" height="48" alt="REST API" />
       </a>
       <br />Rest API
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://www.docker.com/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/docker.png" width="48" height="48" alt="Docker" />
+        <img src="assets/icons/docker.svg" width="48" height="48" alt="Docker" />
       </a>
       <br />Docker
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://nginx.org/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/nginx.png" width="48" height="48" alt="Nginx" />
+        <img src="assets/icons/nginx.svg" width="48" height="48" alt="Nginx" />
       </a>
       <br />Nginx
     </td>
   </tr>
   <tr>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://git-scm.com/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/git.png" width="48" height="48" alt="Git" />
+        <img src="assets/icons/git.svg" width="48" height="48" alt="Git" />
       </a>
       <br />Git
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://github.com/features/actions">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/githubactions.png" width="48" height="48" alt="GitHub Actions" />
+        <img src="assets/icons/actions.svg" width="48" height="48" alt="GitHub Actions" />
       </a>
       <br />Actions
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/html.png" width="48" height="48" alt="HTML" />
+        <img src="assets/icons/html.svg" width="48" height="48" alt="HTML" />
       </a>
       <br />HTML
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/css.png" width="48" height="48" alt="CSS" />
+        <img src="assets/icons/css.svg" width="48" height="48" alt="CSS" />
       </a>
       <br />CSS
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://tailwindcss.com/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/tailwind_css.png" width="48" height="48" alt="Tailwind" />
+        <img src="assets/icons/tailwind.svg" width="48" height="48" alt="Tailwind" />
       </a>
       <br />Tailwind
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://vitejs.dev/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/vite.png" width="48" height="48" alt="Vite" />
+        <img src="assets/icons/vite.svg" width="48" height="48" alt="Vite" />
       </a>
       <br />Vite
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://tanstack.com/query">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/react_query.png" width="48" height="48" alt="React Query" />
+        <img src="assets/icons/reactquery.svg" width="48" height="48" alt="React Query" />
       </a>
       <br />React Query
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://www.postgresql.org/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/postgresql.png" width="48" height="48" alt="PostgreSQL" />
+        <img src="assets/icons/postgresql.svg" width="48" height="48" alt="PostgreSQL" />
       </a>
       <br />PostgreSQL
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://www.mysql.com/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/mysql.png" width="48" height="48" alt="MySQL" />
+        <img src="assets/icons/mysql.svg" width="48" height="48" alt="MySQL" />
       </a>
       <br />MySQL
     </td>
   </tr>
   <tr>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://redis.io/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/redis.png" width="48" height="48" alt="Redis" />
+        <img src="assets/icons/redis.svg" width="48" height="48" alt="Redis" />
       </a>
       <br />Redis
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://www.postman.com/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/postman.png" width="48" height="48" alt="Postman" />
+        <img src="assets/icons/postman.svg" width="48" height="48" alt="Postman" />
       </a>
       <br />Postman
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://www.kernel.org/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/linux.png" width="48" height="48" alt="Linux" />
+        <img src="assets/icons/linux.svg" width="48" height="48" alt="Linux" />
       </a>
       <br />Linux
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://learn.microsoft.com/en-us/windows/wsl/">
         <img src="assets/icons/wsl.svg" width="48" height="48" alt="WSL" />
       </a>
       <br />WSL
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://fishshell.com/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/fish.png" width="48" height="48" alt="Fish Shell" />
+        <img src="assets/icons/fish.svg" width="48" height="48" alt="Fish Shell" />
       </a>
       <br />Fish Shell
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://expressjs.com/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/express.png" width="48" height="48" alt="Express" />
+        <img src="assets/icons/express.svg" width="48" height="48" alt="Express" />
       </a>
       <br />Express
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://laravel.com/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/laravel.png" width="48" height="48" alt="Laravel" />
+        <img src="assets/icons/laravel.svg" width="48" height="48" alt="Laravel" />
       </a>
       <br />Laravel
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://www.rabbitmq.com/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/rabbitmq.png" width="48" height="48" alt="RabbitMQ" />
+        <img src="assets/icons/rabbitmq.svg" width="48" height="48" alt="RabbitMQ" />
       </a>
       <br />RabbitMQ
     </td>
-    <td align="center" width="96">
+    <td align="center" width="11%">
       <a href="https://docs.pytest.org/">
-        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/pytest.png" width="48" height="48" alt="Pytest" />
+        <img src="assets/icons/pytest.svg" width="48" height="48" alt="Pytest" />
       </a>
       <br />Pytest
     </td>
@@ -266,7 +266,7 @@
 </table>
 
 <p align="center">
-  <sub>⚡ Automated metrics synced at 2026-09-06 07:09 UTC</sub>
+  <sub>⚡ Automated metrics synced at 2026-09-06 07:40 UTC</sub>
 </p>
 <!-- stats:end -->
 

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 30" width="106" height="30">
+  <defs>
+    <clipPath id="btnClip">
+      <rect width="106" height="30" rx="5" />
+    </clipPath>
+    <linearGradient id="shimmerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <style>
+      @keyframes shimmerWave {
+        0% { transform: translateX(-120px) skewX(-20deg); }
+        35%, 100% { transform: translateX(130px) skewX(-20deg); }
+      }
+      @keyframes pulseBorder {
+        0%, 100% { stroke: #b91c1c; stroke-opacity: 0.4; }
+        50% { stroke: #f87171; stroke-opacity: 1; filter: drop-shadow(0 0 4px rgba(248, 113, 113, 0.6)); }
+      }
+      .shimmer-bar {
+        animation: shimmerWave 3.6s ease-in-out infinite 0.9s;
+      }
+      .btn-border {
+        animation: pulseBorder 3s ease-in-out infinite 0.5s;
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#btnClip)">
+    <rect width="106" height="30" fill="#d14836" />
+
+    <!-- Moving Shimmer Highlight -->
+    <rect x="0" y="-10" width="40" height="50" fill="url(#shimmerGrad)" class="shimmer-bar" />
+
+    <!-- Gmail Envelope Icon -->
+    <g transform="translate(10, 8)">
+      <rect x="0" y="0" width="16" height="14" rx="2" fill="#ffffff" />
+      <path d="M 0 1 L 8 8 L 16 1" fill="none" stroke="#d14836" stroke-width="1.8" />
+      <path d="M 0 13 L 5 8" stroke="#d14836" stroke-width="1.2" />
+      <path d="M 16 13 L 11 8" stroke="#d14836" stroke-width="1.2" />
+    </g>
+
+    <!-- Label -->
+    <text x="35" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800" fill="#ffffff" letter-spacing="1">EMAIL</text>
+
+    <!-- Pulsing Border -->
+    <rect width="106" height="30" rx="5" fill="none" stroke="#f87171" stroke-width="1.2" class="btn-border" />
+  </g>
+</svg>

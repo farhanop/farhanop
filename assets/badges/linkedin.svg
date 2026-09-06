@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 30" width="120" height="30">
+  <defs>
+    <clipPath id="btnClip">
+      <rect width="120" height="30" rx="5" />
+    </clipPath>
+    <linearGradient id="shimmerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <style>
+      @keyframes shimmerWave {
+        0% { transform: translateX(-130px) skewX(-20deg); }
+        35%, 100% { transform: translateX(150px) skewX(-20deg); }
+      }
+      @keyframes pulseBorder {
+        0%, 100% { stroke: #0284c7; stroke-opacity: 0.4; }
+        50% { stroke: #38bdf8; stroke-opacity: 1; filter: drop-shadow(0 0 4px rgba(56, 189, 248, 0.6)); }
+      }
+      .shimmer-bar {
+        animation: shimmerWave 3.6s ease-in-out infinite 0s;
+      }
+      .btn-border {
+        animation: pulseBorder 3s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Button Surface -->
+  <g clip-path="url(#btnClip)">
+    <rect width="120" height="30" fill="#0077b5" />
+
+    <!-- Moving Shimmer Highlight -->
+    <rect x="0" y="-10" width="45" height="50" fill="url(#shimmerGrad)" class="shimmer-bar" />
+
+    <!-- LinkedIn Icon -->
+    <g transform="translate(10, 7)">
+      <rect width="16" height="16" rx="2" fill="#ffffff" />
+      <text x="8" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="900" fill="#0077b5" text-anchor="middle">in</text>
+    </g>
+
+    <!-- Label -->
+    <text x="36" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800" fill="#ffffff" letter-spacing="1">LINKEDIN</text>
+
+    <!-- Pulsing Border -->
+    <rect width="120" height="30" rx="5" fill="none" stroke="#38bdf8" stroke-width="1.2" class="btn-border" />
+  </g>
+</svg>
