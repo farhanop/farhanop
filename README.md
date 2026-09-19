@@ -255,19 +255,19 @@ _Projects will be auto-synced by CI._
   <tr>
     <td width="50%" align="center">
       <a href="https://github.com/farhanop">
-        <img src="https://github-readme-stats-fast.vercel.app/api?username=farhanop&show_icons=true&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=94a3b8&icon_color=38bdf8" width="100%" alt="GitHub Stats" />
+        <img src="https://github-readme-stats.vercel.app/api?username=farhanop&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=94a3b8&icon_color=38bdf8" width="100%" alt="GitHub Stats" />
       </a>
     </td>
     <td width="50%" align="center">
       <a href="https://github.com/farhanop">
-        <img src="https://streak-stats.demolab.com/?user=farhanop&hide_border=true&background=0d1117&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8" width="100%" alt="GitHub Streak" />
+        <img src="https://streak-stats.demolab.com/?user=farhanop&hide_border=true&background=0d1117&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8&sideLabels=94a3b8&dates=94a3b8&currStreakNum=38bdf8" width="100%" alt="GitHub Streak" />
       </a>
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center">
       <a href="https://github.com/farhanop">
-        <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=farhanop&layout=compact&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=94a3b8" width="58%" alt="Top Languages" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=farhanop&layout=compact&langs_count=8&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=94a3b8" width="58%" alt="Top Languages" />
       </a>
     </td>
   </tr>
