@@ -280,16 +280,6 @@ _Projects will be auto-synced by CI._
 
 ---
 
-## 📅 Contributions in the last year
-
-<div align="center">
-  <a href="https://github.com/farhanop">
-    <img src="assets/contributions.svg" alt="Farhan's Contributions in the last year" width="100%" />
-  </a>
-</div>
-
----
-
 ## ⚡ Recent Activity
 
 <!-- recent-activity:start -->
