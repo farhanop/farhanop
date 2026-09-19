@@ -142,98 +142,6 @@ def build_featured_section() -> str:
     return "\n".join(lines).strip()
 
 
-def build_activity_section() -> str:
-    lines = []
-
-    try:
-        # If token is provided, try authenticated events endpoint (covers org & private commits)
-        # Fall back to public endpoint if needed
-        events = None
-        if GITHUB_TOKEN:
-            try:
-                events = api_get(f"/users/{GITHUB_USERNAME}/events?per_page=25")
-            except requests.RequestException:
-                events = None
-
-        if not events:
-            events = api_get(f"/users/{GITHUB_USERNAME}/events/public?per_page=20")
-
-        if isinstance(events, list) and events:
-            seen_activities = 0
-            for event in events:
-                if seen_activities >= 7:
-                    break
-
-                created = event.get("created_at", "")
-                repo_name = event.get("repo", {}).get("name", "")
-                event_type = event.get("type", "")
-                ts = ""
-                if created:
-                    try:
-                        dt = datetime.fromisoformat(created.replace("Z", "+00:00"))
-                        ts = dt.strftime("%Y-%m-%d %H:%M UTC")
-                    except ValueError:
-                        ts = created
-
-                is_org_repo = "UIGM-IT-Dev" in repo_name
-                repo_display_link = (
-                    f"[`{repo_name}`](https://github.com/UIGM-IT-Dev)"
-                    if is_org_repo
-                    else f"[`{repo_name}`](https://github.com/{repo_name})"
-                )
-                org_badge = " 🏢 _(UIGM IT Dev)_" if is_org_repo else ""
-
-                if event_type == "PushEvent":
-                    commits = event.get("payload", {}).get("commits", [])
-                    count = len(commits) if commits else event.get("payload", {}).get("size", 1)
-                    msg = commits[0].get("message", "").split("\n")[0][:65] if commits else "Update code"
-                    lines.append(
-                        f"- 🚀 Pushed **{count} commit(s)** to {repo_display_link}{org_badge} — _{msg}_"
-                    )
-                    seen_activities += 1
-                elif event_type == "CreateEvent":
-                    ref_type = event.get("payload", {}).get("ref_type", "branch")
-                    ref = event.get("payload", {}).get("ref", "")
-                    target = f"`{ref}`" if ref else "repository"
-                    lines.append(f"- ✅ Created {ref_type} {target} in {repo_display_link}{org_badge}")
-                    seen_activities += 1
-                elif event_type == "IssuesEvent":
-                    action = event.get("payload", {}).get("action", "opened")
-                    title = event.get("payload", {}).get("issue", {}).get("title", "")
-                    lines.append(f"- 📝 {action.capitalize()} issue **{title}** in {repo_display_link}{org_badge}")
-                    seen_activities += 1
-                elif event_type == "PullRequestEvent":
-                    action = event.get("payload", {}).get("action", "opened")
-                    title = event.get("payload", {}).get("pull_request", {}).get("title", "")
-                    lines.append(f"- 🔀 {action.capitalize()} PR **{title}** in {repo_display_link}{org_badge}")
-                    seen_activities += 1
-                elif event_type == "WatchEvent":
-                    lines.append(f"- ⭐ Starred [`{repo_name}`](https://github.com/{repo_name})")
-                    seen_activities += 1
-                elif event_type == "ForkEvent":
-                    fork = event.get("payload", {}).get("forkee", {}).get("full_name", "")
-                    lines.append(f"- 🍴 Forked [`{repo_name}`](https://github.com/{repo_name}) → [`{fork}`](https://github.com/{fork})")
-                    seen_activities += 1
-                elif event_type == "ReleaseEvent":
-                    name = event.get("payload", {}).get("release", {}).get("name", "") or "New Release"
-                    lines.append(f"- 🎉 Released **{name}** in {repo_display_link}{org_badge}")
-                    seen_activities += 1
-
-                if ts and lines and not lines[-1].endswith(f"_{ts}_"):
-                    lines[-1] = f"{lines[-1]} <sub>({ts})</sub>"
-
-        if not lines:
-            lines.append("- _Active daily on institutional repositories and system architecture._")
-
-    except requests.RequestException as e:
-        lines.append(f"- _Currently focusing on core backend architecture & campus systems._")
-        print(f"Notice: Activity fetch encountered network issue: {e}", file=sys.stderr)
-
-    now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    lines.append("")
-    lines.append(f"<sub>⚡ Last activity sync: {now_utc}</sub>")
-    return "\n".join(lines).strip()
-
 
 
 def replace_section(content: str, marker: str, new_content: str) -> str:
@@ -265,9 +173,7 @@ def main():
         featured = build_featured_section()
         content = replace_section(content, "featured-projects", featured)
 
-    print("Syncing recent activity section...")
-    activity = build_activity_section()
-    content = replace_section(content, "recent-activity", activity)
+
 
 
     with open(abs_readme, "w", encoding="utf-8") as f:
