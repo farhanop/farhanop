@@ -62,6 +62,14 @@
 
 ---
 
+## 🏗️ Featured Projects
+
+<!-- featured-projects:start -->
+_Projects will be auto-synced by CI._
+<!-- featured-projects:end -->
+
+---
+
 ## My favorite tools and technologies ⚙️
 
 > Tools and technologies that I have worked with and am interested in
@@ -282,17 +290,11 @@
 
 ---
 
-## 📈 Star History
+## ⚡ Recent Activity
 
-<div align="center">
-  <a href="https://star-history.com/#farhanop/farhanop&Date">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=farhanop/farhanop&type=Date&theme=dark" />
-      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=farhanop/farhanop&type=Date" />
-      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=farhanop/farhanop&type=Date" width="85%" />
-    </picture>
-  </a>
-</div>
+<!-- recent-activity:start -->
+_Activity will be auto-synced by CI._
+<!-- recent-activity:end -->
 
 ---
 
