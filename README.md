@@ -65,7 +65,50 @@
 ## 🏗️ Featured Projects
 
 <!-- featured-projects:start -->
-_Projects will be auto-synced by CI._
+### Library Management System (OPAC) &nbsp;`🔥 ACTIVE PRODUCTION`
+
+Fullstack library OPAC & repository platform replacing legacy SLiMS for university-wide academic library.
+
+> **Architecture Highlight:** Engineered with Vertical Slice Architecture, high-concurrency catalog queries, and automated circulation workflows.
+
+- **Tech Stack:** `FastAPI` · `React` · `TypeScript` · `PostgreSQL` · `Docker` · `SQLAlchemy` · `Alembic`
+- **Access:** 🏢 Developed for **[UIGM IT Dev](https://github.com/UIGM-IT-Dev)** · 🔒 _Enterprise Core System_
+
+### Campus CCTV Real-Time Monitoring &nbsp;`📹 PRODUCTION STREAMING`
+
+Multi-NVR & multi-channel surveillance engine delivering ultra-low-latency real-time video feeds across campus network.
+
+> **Architecture Highlight:** Implemented WebRTC media streaming pipeline with Redis pub/sub state handling and multi-stream hardware acceleration.
+
+- **Tech Stack:** `FastAPI` · `WebRTC` · `Redis` · `MySQL` · `Docker` · `Nginx`
+- **Access:** 🏢 Developed for **[UIGM IT Dev](https://github.com/UIGM-IT-Dev)** · 🔒 _Enterprise Core System_
+
+### LMS Moodle - SIAK Integration Gateway &nbsp;`🔄 ENTERPRISE GATEWAY`
+
+Enterprise middleware bridging Moodle LMS with university Academic Information System (SIAK) for seamless synchronization.
+
+> **Architecture Highlight:** Automated bi-directional sync for thousands of student enrollments, course schedules, and academic grade transcripts.
+
+- **Tech Stack:** `Laravel` · `REST API` · `MySQL` · `Redis` · `Scheduled Jobs`
+- **Access:** 🏢 Developed for **[UIGM IT Dev](https://github.com/UIGM-IT-Dev)** · 🔒 _Enterprise Core System_
+
+### Enterprise Zoom Room & Meeting Manager &nbsp;`🔒 INTERNAL SYSTEM`
+
+Centralized meeting booking, license scheduling, and audit trail system managing enterprise institutional Zoom accounts.
+
+> **Architecture Highlight:** Dynamic host license allocation, conflict detection algorithms, and automated audit logging.
+
+- **Tech Stack:** `Node.js` · `Express` · `Zoom API` · `MySQL` · `RBAC`
+- **Access:** 🏢 Developed for **[UIGM IT Dev](https://github.com/UIGM-IT-Dev)** · 🔒 _Enterprise Core System_
+
+### SIMess Backend API Platform &nbsp;`🌐 OPEN REPOSITORY`
+
+Backend service API power-driving SIMess application with structured RESTful endpoints and authentication services.
+
+> **Architecture Highlight:** Clean API contract design with robust validation and modular route controllers.
+
+- **Tech Stack:** `PHP` · `REST API` · `MySQL` · `Authentication`
+- **Repository:** [github.com/farhanop/simess-api](https://github.com/farhanop/simess-api)
 <!-- featured-projects:end -->
 
 ---
@@ -274,7 +317,7 @@ _Projects will be auto-synced by CI._
 </table>
 
 <p align="center">
-  <sub>⚡ Automated metrics synced at 2026-09-19 18:00 UTC</sub>
+  <sub>⚡ Automated metrics synced at 2026-09-19 18:05 UTC</sub>
 </p>
 <!-- stats:end -->
 
@@ -283,7 +326,15 @@ _Projects will be auto-synced by CI._
 ## ⚡ Recent Activity
 
 <!-- recent-activity:start -->
-_Activity will be auto-synced by CI._
+- 🚀 Pushed **1 commit(s)** to [`farhanop/farhanop`](https://github.com/farhanop/farhanop) — _Update code_ <sub>(2026-09-19 18:05 UTC)</sub>
+- 🚀 Pushed **1 commit(s)** to [`farhanop/farhanop`](https://github.com/farhanop/farhanop) — _Update code_ <sub>(2026-09-19 18:03 UTC)</sub>
+- 🚀 Pushed **1 commit(s)** to [`farhanop/farhanop`](https://github.com/farhanop/farhanop) — _Update code_ <sub>(2026-09-19 18:00 UTC)</sub>
+- 🚀 Pushed **1 commit(s)** to [`farhanop/farhanop`](https://github.com/farhanop/farhanop) — _Update code_ <sub>(2026-09-06 07:10 UTC)</sub>
+- 🚀 Pushed **1 commit(s)** to [`farhanop/farhanop`](https://github.com/farhanop/farhanop) — _Update code_ <sub>(2026-09-06 07:42 UTC)</sub>
+- 🚀 Pushed **1 commit(s)** to [`farhanop/farhanop`](https://github.com/farhanop/farhanop) — _Update code_ <sub>(2026-09-06 07:03 UTC)</sub>
+- 🚀 Pushed **1 commit(s)** to [`farhanop/farhanop`](https://github.com/farhanop/farhanop) — _Update code_ <sub>(2026-09-06 06:57 UTC)</sub>
+
+<sub>⚡ Last activity sync: 2026-09-19 18:05 UTC</sub>
 <!-- recent-activity:end -->
 
 ---
